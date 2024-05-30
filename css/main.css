@@ -1798,7 +1798,7 @@ input::-moz-focus-inner {
 
 .masonry .entry__text {
   padding: 3.2rem 2.8rem 4rem;
-  background-color: #ADCCF2;
+  background-color: #ffffff;
 }
 
 .masonry .entry__text p {
@@ -1992,7 +1992,37 @@ input::-moz-focus-inner {
   }
 
 }
+@media screen and (min-width:1800px) {
+  .masonry{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 1500px;
+  }
+  .masonry-wrap {
+    max-width: 750px;
+  }
 
+  .listing-header {
+    padding: 0 1.6vw 2.4rem;
+  }
+
+  .masonry .grid-sizer,
+  .masonry__brick {
+    width: 30%;
+  }
+
+  .masonry__brick {
+    padding: 0 1.6vw;
+  }
+
+  .masonry .entry {
+    margin-bottom: 1vw;
+  }
+  .top-design{
+    margin-top: 10vw;
+  }
+}
 @media screen and (max-width:1700px) {
   .masonry__brick {
     padding: 0 1.4vw;
@@ -2159,7 +2189,7 @@ input::-moz-focus-inner {
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   width: 300px;
-  background-color: #DCB5F6;
+  background-color: #6B243F;
   padding-top: 6.4rem;
   padding-right: 3.2rem;
   padding-left: 4.4rem;
@@ -2211,7 +2241,7 @@ input::-moz-focus-inner {
   -ms-flex-align: stretch;
   align-items: stretch;
   max-width: 100%;
-  background-color: #DCB5F6;
+  background-color: #6B243F;
   margin-top: 3.2rem;
 }
 
@@ -2485,7 +2515,7 @@ input::-moz-focus-inner {
 
   .header__top {
     z-index: 100;
-    background-color: #DCB5F6;
+    background-color: #6B243F;
     width: 100%;
     height: 78px;
     position: fixed;
@@ -2509,7 +2539,7 @@ input::-moz-focus-inner {
 
   .header__nav-wrap {
     z-index: 99;
-    background: #DCB5F6;
+    background: #6B243F;
     opacity: 0;
     visibility: hidden;
     position: fixed;
