@@ -1,19 +1,7 @@
 /* ===================================================================
- * TypeRite - Main JS
+ * Pet Mental - Main JS
  *
  * ------------------------------------------------------------------- */
-    function showContent(category) {
-        // Tüm içerikleri gizle
-        document.getElementById("dogContent").style.display = "none";
-        document.getElementById("catContent").style.display = "none";
-        
-        // Belirli kategoriye göre içeriği göster
-        if (category === "köpek") {
-            document.getElementById("dogContent").style.display = "block";
-        } else if (category === "kedi") {
-            document.getElementById("catContent").style.display = "block";
-        }
-    }
 
 (function($) {
 
