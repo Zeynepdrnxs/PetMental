@@ -58,6 +58,8 @@
  * # base style overrides
  *
  * ------------------------------------------------------------------- */
+ @charset "UTF-8";
+
 html {
   font-size: 10px;
 }
@@ -2300,6 +2302,10 @@ input::-moz-focus-inner {
   white-space: nowrap; /* Metnin tek satırda kalmasını sağla */
 }
 
+.header__nav ul.sub-menu li > a{
+  font-size: 12px;
+}
+
 .header__nav li:hover > a,
 .header__nav li:focus > a {
   color: #ffffff;
@@ -2675,6 +2681,30 @@ input::-moz-focus-inner {
 
   .header__nav-wrap {
     padding: 140px 40px 64px;
+  }
+
+  .header__menu-toggle {
+    right: 3rem;
+  }
+
+  .header__search-trigger {
+    right: 8.8rem;
+  }
+
+  .header__search-form input[type="search"] {
+    font-size: 2.6rem;
+  }
+
+}
+
+@media screen and (max-width:350px) {
+  .header__logo {
+    left: 3rem;
+  }
+
+  .header__nav-wrap {
+    padding: 140px 40px 64px;
+    display: block;
   }
 
   .header__menu-toggle {
@@ -3363,14 +3393,24 @@ input::-moz-focus-inner {
   }
 
   .header__nav-wrap {
-      display: none;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      right: 0;
-      background-color: #fff;
-      z-index: 1000;
-      padding: 20px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-flex: 1 1 0%;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    max-width: 100%;
+    background-color: #6B243F;
+    margin-top: 3.2rem;
   }
 
   .header__nav-wrap.open {
@@ -3386,7 +3426,7 @@ input::-moz-focus-inner {
   }
 
   .header__nav a {
-      font-size: 16px;
+      font-size: 15px;
       padding: 10px;
   }
 
